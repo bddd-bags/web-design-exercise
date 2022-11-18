@@ -15,8 +15,11 @@
 
 /* Header */
 
-#header {
+header {
     transition: background-image 1s !important;
+}
+
+#header {
     max-width: 100%;
     min-height: 100vh;
     background: radial-gradient(189.96% 61.18% at 100% 43.82%, rgba(255, 181, 72, 0) 0%, rgba(44, 42, 38, 0.803) 73.22%, #08090A 99.74%), url('../images/header-background.jpg');
@@ -25,8 +28,6 @@
     background-position: center;
     background-position-x: center;
     background-position-x: center;
-    /* transition-property: opacity; */
-    /* transition: all .5s ease-out; */
     font-family: 'Poppins', sans-serif;
 }
 

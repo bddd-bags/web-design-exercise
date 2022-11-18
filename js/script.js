@@ -2,21 +2,16 @@ const getNavbarScroll = document.querySelector("#header .navbar-scroll");
 const getHeaderContent = document.querySelector("#header .header-content");
 const getImage = document.getElementById("header");
 const images = [
-    "../images/prau-2.jpg",
-    "../images/prau-3.jpg",
-    "../images/header-background.jpg",
-    "../images/prau-7.jpg",
+    "./images/prau-2.jpg",
+    "./images/prau-3.jpg",
+    "./images/header-background.jpg",
+    "./images/prau-7.jpg",
 ];
 let num = 0;
 
 if (getImage) {
     setInterval(() => {
         getImage.style.backgroundImage = `radial-gradient(189.96% 61.18% at 100% 43.82%, rgba(255, 181, 72, 0) 0%, rgba(44, 42, 38, 0.803) 73.22%, #08090A 99.74%), url('${images[num]}')`;
-        getImage.style.backgroundRepeat = "no-repeat";
-        getImage.style.backgroundSize = "cover";
-        getImage.style.backgroundPosition = "center";
-        getImage.style.backgroundPositionX = "center";
-        getImage.style.backgroundPositionY = "center";
         num++;
         if (num > 3) num = 0;
     }, 5000);
@@ -44,9 +39,9 @@ getButton.addEventListener("click", function(e) {
     const getBirthDate = document.getElementById("birth-date").value;
     const getDateClimb = document.getElementById("date-climb").value;
     const getRoute = document.getElementById("route").value;
-    getTableHandle.style.display = "block";
 
     if (Boolean(getName)) {
+        getTableHandle.style.display = "block";
         const getTbody = document.querySelector("table tbody");
         const createTr = document.createElement("tr");
 
